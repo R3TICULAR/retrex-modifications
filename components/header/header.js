@@ -1,38 +1,9 @@
 import { LitElement, html, css } from 'https://unpkg.com/lit@2.0.0/index.js?module';
+import styles from 'components\header\header.css'
 
 class HeaderComponent extends LitElement {
   // Defining styles using standard CSS
-  static styles = css`
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: teal;
-      color: white;
-    }
-
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-  `;
+  static styles = css`${styles}`;
 
   render() {
     return html`
