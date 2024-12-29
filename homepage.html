@@ -1,14 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Retrex Mods</title>
-    <script type="module" src="./components/header/header.js"></script>
-</head>
-<body>
-<header-component>
-</header-component>
-    
-</body>
+    <script type="module" src="components\header\header-component.js"></script>
+  </head>
+  <body>
+    <header-component>
+      <svg
+        slot="logo"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 280 56"
+        width="280"
+        height="56"
+        role="img"
+        aria-labelledby="title"
+      >
+        <title>Retrex Specs Motorsports Logo</title>
+
+        <!-- Define a rounded rectangle clipping path -->
+        <defs>
+          <clipPath id="rounded-border">
+            <rect width="280" height="56" rx="8" ry="8" />
+          </clipPath>
+          <!-- Updated Checkered Pattern Colors -->
+          <pattern
+            id="checkered-pattern"
+            width="10"
+            height="10"
+            patternUnits="userSpaceOnUse"
+          >
+            <rect width="5" height="5" fill="#FFFFFF" />
+            <rect x="5" y="5" width="5" height="5" fill="#006D72" />
+          </pattern>
+        </defs>
+
+        <!-- Background with Rounded Border -->
+        <rect
+          width="280"
+          height="56"
+          rx="8"
+          ry="8"
+          fill="#002F34"
+          clip-path="url(#rounded-border)"
+        />
+
+        <!-- Group for Logo Content -->
+        <g clip-path="url(#rounded-border)">
+          <!-- Checkered Flag Graphic -->
+          <polygon
+            points="0,0 100,14 90,42 0,33"
+            fill="url(#checkered-pattern)"
+          />
+
+          <!-- Speed Lines -->
+          <line
+            x1="115"
+            y1="16"
+            x2="280"
+            y2="8"
+            stroke="#00B3A4"
+            stroke-width="1"
+          />
+          <line
+            x1="115"
+            y1="24"
+            x2="280"
+            y2="16"
+            stroke="#00B3A4"
+            stroke-width="1"
+          />
+
+          <!-- Main Text -->
+          <text
+            x="110"
+            y="35"
+            fill="#00E5D2"
+            font-family="Impact, Arial Black, sans-serif"
+            font-size="28"
+            letter-spacing="1.5"
+          >
+            Retrex Specs
+          </text>
+
+          <!-- Subtext or Tagline -->
+          <text
+            x="110"
+            y="48"
+            fill="#FFFFFF"
+            font-family="Arial, sans-serif"
+            font-size="10"
+          >
+            Performance Meets Precision
+          </text>
+        </g>
+      </svg>
+    </header-component>
+  </body>
 </html>
