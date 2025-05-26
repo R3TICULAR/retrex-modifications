@@ -2,42 +2,14 @@ import {
   LitElement,
   html,
   css,
+  unsafeCSS
 } from "https://unpkg.com/lit@2.0.0/index.js?module";
+//import styles from "./header-component.scss"; // Import the SCSS file
+import styles from './header-component.scss';
 
 class HeaderComponent extends LitElement {
-  // Defining styles using standard CSS
-  static styles = css`
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #008080;
-      color: white;
-      max-block-size: 80px;
-    }
 
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-
-    a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-  `;
+  static styles = css`${unsafeCSS(styles)}`;
 
   /**
    * @slot 'logo' - Slot for logo present within navigation bar
@@ -45,8 +17,8 @@ class HeaderComponent extends LitElement {
    */
 
   render() {
+    console.log("HeaderComponent Rendered");
     return html`
-      <link rel="stylesheet" href="./header/header.css" />
       <header>
         <slot name="logo"></slot>
         <slot name='nav-options'>
