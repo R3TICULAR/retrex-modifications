@@ -15,7 +15,6 @@ export default defineConfig({
   plugins: [
     litCss({
       include: '**/*.scss', // Process SCSS files
-      transform: (css) => css, // Export SCSS as strings
     }),
   ],
 });

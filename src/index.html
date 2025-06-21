@@ -5,12 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Retrex Mods</title>
     <script type="module" src="./index.js"></script>
-    <script src="https://kit.fontawesome.com/e2ac688914.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/e2ac688914.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+  <style>
+    @keyframes rotate-clockwise {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .h-logo {
+      animation: rotate-clockwise 6s linear infinite;
+    }
+  </style>
   <body>
     <header-component>
       <div slot="logo" class="h-logo has-image">
-        <i class="fa-solid fa-otter fa-2xl"></i>
+        <i class="fa-solid fa-yin-yang fa-2xl"></i>
       </div>
     </header-component>
     <hero-component>

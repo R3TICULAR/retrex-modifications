@@ -1,10 +1,5 @@
-import {
-  LitElement,
-  html,
-  css,
-  unsafeCSS
-} from "https://unpkg.com/lit@2.0.0/index.js?module";
-//import styles from "./header-component.scss"; // Import the SCSS file
+import { LitElement, html, css, unsafeCSS } from 'lit';
+
 import styles from './header-component.scss';
 
 class HeaderComponent extends LitElement {
@@ -33,4 +28,6 @@ class HeaderComponent extends LitElement {
 }
 
 // Define the custom element
-customElements.define("header-component", HeaderComponent);
+if (!customElements.get("header-component")) {
+  customElements.define("header-component", HeaderComponent);
+}
