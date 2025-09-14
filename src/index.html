@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Retrex Mods</title>
     <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="./styles/tokens.css" />
     <script
       src="https://kit.fontawesome.com/e2ac688914.js"
       crossorigin="anonymous"
@@ -22,6 +23,9 @@
     .h-logo {
       animation: rotate-clockwise 6s linear infinite;
     }
+    html, body {
+      font-family: var(--font-family-base);
+    }
   </style>
   <body>
     <header-component>
@@ -30,9 +34,11 @@
       </div>
     </header-component>
     <hero-component>
-      <h1 slot="title">Welcome to Retrex Mods</h1>
+      <h1 slot="title">Hey! Im Cecil </h1>
       <p slot="description">
-        Your one-stop shop for all things automotive performance and styling.
+        Welcome to my portfolio site, designed to showcase my skills and projects in web development and design.
+        Utilizing modern web technologies to create engaging and user-friendly experiences.
+        With a focus on responsive design, accessibility, and performance, I aim to deliver high-quality solutions that meet the needs of users and clients alike.
       </p>
       <button slot="cta">Shop Now</button>
     </hero-component>
