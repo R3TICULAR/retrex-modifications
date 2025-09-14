@@ -7,7 +7,8 @@ header {
   background-color: var(--color-primary);
   color: var(--color-bg);
   max-block-size: 80px;
-  border-radius: 5px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
 
   nav {
     display: flex;
