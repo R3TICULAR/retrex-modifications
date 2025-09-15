@@ -17,11 +17,12 @@ class HeaderComponent extends LitElement {
       <header>
         <slot name="logo"></slot>
         <slot name='nav-options'>
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
+          <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </slot>
       </header>
     `;
   }
