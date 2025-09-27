@@ -18,7 +18,7 @@ const Template = () => {
         Utilizing modern web technologies to create engaging and user-friendly experiences.
         With a focus on responsive design, accessibility, and performance, I aim to deliver high-quality solutions that meet the needs of users and clients alike.
       </p>
-      <button slot="cta">Project I</button>
+      <retrex-button slot="cta" variant="primary" href="#projects">Project One</retrex-button>
     </hero-component>
   `;
   return container;

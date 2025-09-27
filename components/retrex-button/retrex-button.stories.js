@@ -29,7 +29,12 @@ export const Tertiary = () => {
 
 export const AsLink = () => {
   const container = document.createElement('div');
-  container.innerHTML = `<retrex-button href="#">Link Button</retrex-button>`;
+  container.innerHTML = `
+    <retrex-button href="#">
+      Link Button
+      <i slot="icon-end" class="fa-solid fa-up-right-from-square"></i>
+    </retrex-button>
+  `;
   return container;
 };
 

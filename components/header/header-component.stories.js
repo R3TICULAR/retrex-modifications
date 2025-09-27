@@ -32,10 +32,10 @@ export const WithCustomNav = () => {
         <i class="fa-solid fa-yin-yang fa-2xl"></i>
       </div>
       <nav slot="nav-options">
-        <retrex-button href="#home" variant="secondary" size="small">Home</retrex-button>
-        <retrex-button href="#about" variant="secondary" size="small">About</retrex-button>
-        <retrex-button href="#projects" variant="secondary" size="small">Projects</retrex-button>
-        <retrex-button href="#contact" variant="secondary" size="small">Contact</retrex-button>
+        <retrex-button href="#home" variant="tertiary">Home</retrex-button>
+        <retrex-button href="#about" variant="tertiary">About</retrex-button>
+        <retrex-button href="#projects" variant="tertiary">Projects</retrex-button>
+        <retrex-button href="#contact" variant="tertiary">Contact</retrex-button>
       </nav>
     </header-component>
     <script src="https://kit.fontawesome.com/e2ac688914.js" crossorigin="anonymous"></script>
