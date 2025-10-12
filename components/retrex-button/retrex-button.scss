@@ -1,0 +1,126 @@
+:host {
+  display: inline-block;
+}
+
+.retrex-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-family-base);
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  // CSS custom properties for scaling
+  --btn-scale: 1;
+  --btn-padding-y: 0.5rem;
+  --btn-padding-x: 1rem;
+  --btn-font-size: 0.875rem;
+  
+  // Apply scaled values
+  padding: calc(var(--btn-padding-y) * var(--btn-scale)) calc(var(--btn-padding-x) * var(--btn-scale));
+  font-size: calc(var(--btn-font-size) * var(--btn-scale));
+  
+  // Medium screens (tablets)
+  @media (min-width: 768px) {
+    --btn-padding-y: 0.75rem;
+    --btn-padding-x: 1.5rem;
+    --btn-font-size: 1rem;
+  }
+  
+  // Large screens (desktop) - reduced size
+  @media (min-width: 1024px) {
+    --btn-padding-y: 0.8rem;  // Reduced from 1rem
+    --btn-padding-x: 1.75rem; // Reduced from 2rem
+    --btn-font-size: 1.1rem;  // Reduced from 1.125rem
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  // Primary - Main teal action button
+  &--primary {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    border: 2px solid var(--color-primary);
+    
+    &:hover:not(:disabled) {
+      background: var(--color-primary-dark);
+      border-color: var(--color-primary-dark);
+      box-shadow:  -4px 4px 12px rgba(0, 0, 0, 0.15);
+      transform: translate(2px, -2px);
+    }
+    
+    &:active:not(:disabled) {
+      background: var(--color-primary-dark);
+      transform: translateY(1px);
+    }
+  }
+  
+  // Secondary - Accent yellow for supporting actions
+  &--secondary {
+    background: var(--color-accent);
+    color: var(--color-text);
+    border: 2px solid var(--color-accent);
+    
+    &:hover:not(:disabled) {
+      background: var(--color-accent-dark);
+      border-color: var(--color-accent-dark);
+      box-shadow:  -4px 4px 12px rgba(0, 0, 0, 0.15);
+      transform: translate(2px, -2px);
+    }
+    
+    &:active:not(:disabled) {
+      background: var(--color-accent-dark);
+      transform: translateY(1px);
+    }
+  }
+  
+  // Tertiary - Subtle outline button (perfect for nav)
+  &--tertiary {
+    background: transparent;
+    color: var(--color-bg);
+    border: 2px solid var(--color-border);
+    
+    &:hover:not(:disabled) {
+      background: var(--color-surface);
+      border-color: var(--color-bg);
+      color: var(--color-text);
+      box-shadow:  -4px 4px 12px rgba(0, 0, 0, 0.15);
+      transform: translate(2px, -2px);
+    }
+    
+    &:active:not(:disabled) {
+      background: var(--color-primary-light);
+      transform: translateY(1px);
+    }
+  }
+  
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  &__spinner {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-left: 0.5rem;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
