@@ -11,11 +11,11 @@
 
 
 :root {
-  --color-primary: #14b8a6;
-  --color-primary-dark: #0f766e;
-  --color-primary-light: #5eead4;
-  --color-accent: #facc15;
-  --color-accent-dark: #eab308;
+  --color-primary: #6ac4ba;
+  --color-primary-dark: #6f6f6f;
+  --color-primary-light: #e2e2e2;
+  --color-accent: #aeaeae;
+  --color-accent-dark: #515151;
   --color-accent-light: #fef3c7;
   --color-bg: #ffffff;
   --color-surface: #f8fafc;
