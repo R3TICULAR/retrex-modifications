@@ -4,17 +4,60 @@ import styles from './hero-component.scss';
 class HeroComponent extends LitElement {
   static styles = css`${unsafeCSS(styles)}`;
 
+  static properties = {
+    typewriterText: { type: String },
+    displayText: { type: String, state: true }
+  };
+
+  constructor() {
+    super();
+    this.typewriterText = '';
+    this.displayText = '';
+  }
+
+  firstUpdated() {
+    const titleSlot = this.shadowRoot.querySelector('slot[name="title"]');
+    const slottedElements = titleSlot.assignedElements();
+    
+    if (slottedElements.length > 0) {
+      this.typewriterText = slottedElements[0].textContent;
+      slottedElements[0].textContent = '';
+      this.startTypewriter();
+    }
+  }
+
+  startTypewriter() {
+    let i = 0;
+    const speed = 100;
+    
+    const typeChar = () => {
+      if (i < this.typewriterText.length) {
+        this.displayText += this.typewriterText.charAt(i);
+        i++;
+        setTimeout(typeChar, speed);
+      }
+    };
+    
+    typeChar();
+  }
+
   render() {
     return html`
       <div class="video-container">
-        <div class="particles">
-          ${Array.from({length: 15}, (_, i) => html`<div class="particle particle-${i}"></div>`)}
+        <div class="parallax-layers">
+          <div class="layer layer-1"></div>
+          <div class="layer layer-2"></div>
+          <div class="layer layer-3"></div>
         </div>
         <slot name="video"></slot>
         <div class="content">
-          <slot name="title">Default Title</slot>
-          <slot name="description"><p>Default description</p></slot>
-          <slot name="cta"><a href="#" class="cta-button">Get Started</a></slot>
+          <div class="typewriter-container">
+            <span class="typewriter-text">${this.displayText}</span>
+            <span class="cursor">|</span>
+          </div>
+          <slot name="title" style="display: none;">Default Title</slot>
+          <slot name="description"></slot>
+          <slot name="cta"></slot>
         </div>
       </div>
     `;
