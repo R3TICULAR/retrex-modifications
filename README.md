@@ -42,4 +42,4 @@ A personal developer portfolio built with Lit web components following design sy
 - Design tokens in `/src/styles/tokens.css` for consistent theming
 - All components designed mobile-first with responsive breakpoints 
 # retrex-modifications
-A Portfolio website built by me to showcase my wed development skillset utilizing Lit web components.
+A Portfolio website built by me to showcase my web development skillset utilizing Lit web components.

@@ -30,7 +30,7 @@ export const Project = () => {
       <div slot="tags">React • Node.js • MongoDB</div>
       <div slot="actions">
         <retrex-button variant="primary" href="#">View Demo</retrex-button>
-        <retrex-button variant="tertiary" href="#">GitHub</retrex-button>
+        <retrex-button variant="secondary" href="#">GitHub</retrex-button>
       </div>
     </retrex-tile>
   `;
