@@ -37,32 +37,60 @@
 }
 
 .layer-1 {
-  background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.8) 3px, transparent 3px),
-              radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.6) 2px, transparent 2px);
+  background: radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.8) 3px,
+      transparent 3px
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255, 255, 255, 0.6) 2px,
+      transparent 2px
+    );
   background-size: 100px 100px, 150px 150px;
   animation: drift-slow 20s linear infinite;
 }
 
 .layer-2 {
-  background: radial-gradient(circle at 60% 20%, rgba(255, 255, 255, 0.7) 2.5px, transparent 2.5px),
-              radial-gradient(circle at 30% 80%, rgba(255, 255, 255, 0.5) 2px, transparent 2px);
+  background: radial-gradient(
+      circle at 60% 20%,
+      rgba(255, 255, 255, 0.7) 2.5px,
+      transparent 2.5px
+    ),
+    radial-gradient(
+      circle at 30% 80%,
+      rgba(255, 255, 255, 0.5) 2px,
+      transparent 2px
+    );
   background-size: 80px 80px, 120px 120px;
   animation: drift-medium 15s linear infinite reverse;
 }
 
 .layer-3 {
-  background: radial-gradient(circle at 40% 60%, rgba(255, 255, 255, 0.6) 2px, transparent 2px);
+  background: radial-gradient(
+    circle at 40% 60%,
+    rgba(255, 255, 255, 0.6) 2px,
+    transparent 2px
+  );
   background-size: 60px 60px;
   animation: drift-fast 10s linear infinite;
 }
 
 ::slotted([slot="title"]) {
-  font-size: 3rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: var(--color-bg);
   margin-bottom: 1rem;
   font-family: var(--font-family-base);
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 4px rgba(0, 0, 0, 0.4);
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 2.5rem;
+  }
 }
 
 ::slotted([slot="description"]) {
@@ -100,8 +128,6 @@
     transform: translateX(8%) translateY(-15%);
   }
 }
-
-
 
 .content {
   position: absolute;
@@ -145,7 +171,7 @@
   margin-bottom: 1rem;
   font-family: var(--font-family-base);
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 4px rgba(0, 0, 0, 0.4);
-  
+
   @media (min-width: 768px) {
     font-size: 3rem;
   }
@@ -156,10 +182,12 @@
 }
 
 @keyframes blink {
-  0%, 50% {
+  0%,
+  50% {
     opacity: 1;
   }
-  51%, 100% {
+  51%,
+  100% {
     opacity: 0;
   }
 }
@@ -183,5 +211,3 @@
     color: var(--color-bg);
   }
 }
-
-
