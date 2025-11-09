@@ -34,8 +34,13 @@ class RetrexTile extends LitElement {
         
         <div class="retrex-tile__content">
           <div class="retrex-tile__header">
-            <slot name="title"></slot>
-            <slot name="subtitle"></slot>
+            <div class="retrex-tile__title-section">
+              <slot name="title"></slot>
+              <slot name="subtitle"></slot>
+            </div>
+            <div class="retrex-tile__badge">
+              <slot name="badge"></slot>
+            </div>
           </div>
           
           <div class="retrex-tile__body">
@@ -45,10 +50,10 @@ class RetrexTile extends LitElement {
           <div class="retrex-tile__tags">
             <slot name="tags"></slot>
           </div>
-        </div>
-        
-        <div class="retrex-tile__actions">
-          <slot name="actions"></slot>
+          
+          <div class="retrex-tile__actions">
+            <slot name="actions"></slot>
+          </div>
         </div>
       </div>
     `;
