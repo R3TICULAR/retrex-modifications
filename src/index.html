@@ -6,6 +6,7 @@
     <title>Retrex Mods</title>
     <script type="module" src="./index.js"></script>
     <link rel="stylesheet" href="./styles/tokens.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <script
       src="https://kit.fontawesome.com/e2ac688914.js"
       crossorigin="anonymous"
@@ -36,18 +37,61 @@
     <hero-component>
       <h1 slot="title">Hey! I'm Cecil</h1>
     </hero-component>
-    <retrex-tile id="projects">
-      <div slot="title">Project One</div>
-      <div slot="description">
-        A web application that allows users to track their daily habits and
-        goals, with features such as reminders, progress tracking, and social
-        sharing.
-      </div>
-      <div slot="tags">React • Node.js • MongoDB</div>
-      <div slot="actions">
-        <retrex-button variant="primary" href="#">View Demo</retrex-button>
-        <retrex-button variant="secondary" href="#">GitHub</retrex-button>
-      </div>
-    </retrex-tile>
+    <retrex-showcase id="projects">
+      <h2 slot="title">Featured Projects</h2>
+      <p slot="description">A collection of my recent development work showcasing modern web technologies</p>
+      
+      <retrex-tile slot="projects">
+        <div slot="title">Portfolio Website</div>
+        <retrex-badge slot="badge" variant="development">In Development</retrex-badge>
+        <div slot="description">
+          Personal developer portfolio built with Lit web components, featuring responsive design and modern animations.
+        </div>
+        <div slot="tags">Lit • SCSS • Vite • Storybook</div>
+        <div slot="actions">
+          <retrex-button variant="primary" href="#">View Demo</retrex-button>
+          <retrex-button variant="secondary" href="#">GitHub</retrex-button>
+        </div>
+      </retrex-tile>
+      
+      <retrex-tile slot="projects">
+        <div slot="title">E-commerce Platform</div>
+        <retrex-badge slot="badge" variant="archived">Archived</retrex-badge>
+        <div slot="description">
+          Full-stack web application with user authentication, payment processing, and real-time inventory management.
+        </div>
+        <div slot="tags">React • Node.js • MongoDB • Stripe</div>
+        <div slot="actions">
+          <retrex-button variant="primary" href="#">View Demo</retrex-button>
+          <retrex-button variant="secondary" href="#">GitHub</retrex-button>
+        </div>
+      </retrex-tile>
+      
+      <retrex-tile slot="projects">
+        <div slot="title">Task Management App</div>
+        <retrex-badge slot="badge" variant="archived">Archived</retrex-badge>
+        <div slot="description">
+          Collaborative project management tool with real-time updates, team collaboration, and progress tracking.
+        </div>
+        <div slot="tags">Vue.js • Express • Socket.io • PostgreSQL</div>
+        <div slot="actions">
+          <retrex-button variant="primary" href="#">View Demo</retrex-button>
+          <retrex-button variant="secondary" href="#">GitHub</retrex-button>
+        </div>
+      </retrex-tile>
+      
+      <retrex-tile slot="projects">
+        <div slot="title">Data Visualization Dashboard</div>
+        <retrex-badge slot="badge" variant="archived">Archived</retrex-badge>
+        <div slot="description">
+          Interactive analytics dashboard with real-time data processing and customizable chart components.
+        </div>
+        <div slot="tags">D3.js • Python • FastAPI • Redis</div>
+        <div slot="actions">
+          <retrex-button variant="primary" href="#">View Demo</retrex-button>
+          <retrex-button variant="secondary" href="#">GitHub</retrex-button>
+        </div>
+      </retrex-tile>
+    </retrex-showcase>
   </body>
 </html>
