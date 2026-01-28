@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,12 @@
     <title>Retrex Mods</title>
     <script type="module" src="./index.js"></script>
     <link rel="stylesheet" href="./styles/tokens.css" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
     <script
       src="https://kit.fontawesome.com/e2ac688914.js"
       crossorigin="anonymous"
@@ -39,13 +44,19 @@
     </hero-component>
     <retrex-showcase id="projects">
       <h2 slot="title">Featured Projects</h2>
-      <p slot="description">A collection of my recent development work showcasing modern web technologies</p>
-      
+      <p slot="description">
+        A collection of my recent development work showcasing modern web
+        technologies
+      </p>
+
       <retrex-tile slot="projects">
         <div slot="title">Portfolio Website</div>
-        <retrex-badge slot="badge" variant="development">In Development</retrex-badge>
+        <retrex-badge slot="badge" variant="development"
+          >In Development</retrex-badge
+        >
         <div slot="description">
-          Personal developer portfolio built with Lit web components, featuring responsive design and modern animations.
+          Personal developer portfolio built with Lit web components, featuring
+          responsive design and modern animations.
         </div>
         <div slot="tags">Lit • SCSS • Vite • Storybook</div>
         <div slot="actions">
@@ -53,12 +64,13 @@
           <retrex-button variant="secondary" href="#">GitHub</retrex-button>
         </div>
       </retrex-tile>
-      
+
       <retrex-tile slot="projects">
         <div slot="title">E-commerce Platform</div>
         <retrex-badge slot="badge" variant="archived">Archived</retrex-badge>
         <div slot="description">
-          Full-stack web application with user authentication, payment processing, and real-time inventory management.
+          Full-stack web application with user authentication, payment
+          processing, and real-time inventory management.
         </div>
         <div slot="tags">React • Node.js • MongoDB • Stripe</div>
         <div slot="actions">
@@ -66,25 +78,29 @@
           <retrex-button variant="secondary" href="#">GitHub</retrex-button>
         </div>
       </retrex-tile>
-      
+
       <retrex-tile slot="projects">
-        <div slot="title">Task Management App</div>
+        <div slot="title">Announce Kit</div>
         <retrex-badge slot="badge" variant="archived">Archived</retrex-badge>
         <div slot="description">
-          Collaborative project management tool with real-time updates, team collaboration, and progress tracking.
+          AnnounceKit analyzes HTML/JSX to produce a normalized accessibility
+          announcement model and approximate screen-reader output across
+          platforms, helping teams catch a11y issues earlier and reduce cross-OS
+          triage friction.
         </div>
-        <div slot="tags">Vue.js • Express • Socket.io • PostgreSQL</div>
+        <div slot="tags"></div>
         <div slot="actions">
           <retrex-button variant="primary" href="#">View Demo</retrex-button>
           <retrex-button variant="secondary" href="#">GitHub</retrex-button>
         </div>
       </retrex-tile>
-      
+
       <retrex-tile slot="projects">
         <div slot="title">Data Visualization Dashboard</div>
         <retrex-badge slot="badge" variant="archived">Archived</retrex-badge>
         <div slot="description">
-          Interactive analytics dashboard with real-time data processing and customizable chart components.
+          Interactive analytics dashboard with real-time data processing and
+          customizable chart components.
         </div>
         <div slot="tags">D3.js • Python • FastAPI • Redis</div>
         <div slot="actions">
@@ -93,5 +109,16 @@
         </div>
       </retrex-tile>
     </retrex-showcase>
+    <retrex-footer>
+      <a slot="github" href="https://github.com/R3TICULAR/retrex-modifications">
+        <i class="fa-brands fa-github fa-2xl"></i>
+      </a>
+      <a slot="linkedin" href="https://linkedin.com/in/cecil-hunter-1357c?">
+        <i class="fa-brands fa-linkedin fa-2xl"></i>
+      </a>
+      <a slot="email" href="ccecilhunter@aol.com">
+        <i class="fa-solid fa-envelope fa-2xl"></i>
+      </a>
+    </retrex-footer>
   </body>
 </html>
