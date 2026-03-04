@@ -27,7 +27,7 @@ class HeaderComponent extends LitElement {
   render() {
     console.log("HeaderComponent Rendered");
     return html`
-      <header>
+      <header class="${this.menuOpen ? 'menu-active' : ''}">
         <slot name="logo"></slot>
         <button class="menu-toggle" @click=${this.toggleMenu} aria-label="Toggle menu">
           <slot name="menu-icon">
@@ -39,9 +39,9 @@ class HeaderComponent extends LitElement {
         <div class="nav-wrapper ${this.menuOpen ? 'open' : ''}">
         <slot name='nav-options'>
           <nav>
-            <retrex-button href="#home" variant="tertiary">Home</retrex-button>
-            <retrex-button href="#About" variant="tertiary">About</retrex-button>
-            <retrex-button href="#Contact" variant="tertiary">Contact</retrex-button>
+            <retrex-button href="#home" variant=${this.menuOpen ? "primary" : "tertiary"}>Home</retrex-button>
+            <retrex-button href="#About" variant=${this.menuOpen ? "primary" : "tertiary"}>About</retrex-button>
+            <retrex-button href="#Contact" variant=${this.menuOpen ? "primary" : "tertiary"}>Contact</retrex-button>
           </nav>
         </slot>
         </div>

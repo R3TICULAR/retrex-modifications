@@ -31,6 +31,7 @@
       padding: 0;
       width: 100%;
       overflow-x: hidden;
+      min-height: 200vh; /* TEMP: Force scrolling to test sticky */
     }
   </style>
   <body>
@@ -50,6 +51,7 @@
       </p>
 
       <retrex-tile slot="projects">
+        <img slot="image" src="./images/Caricature.png" alt="Portfolio Screenshot" style="object-position: 50% 30%;" />
         <div slot="title">Portfolio Website</div>
         <retrex-badge slot="badge" variant="development"
           >In Development</retrex-badge

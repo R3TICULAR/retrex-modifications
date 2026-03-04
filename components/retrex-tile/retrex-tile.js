@@ -7,7 +7,8 @@ class RetrexTile extends LitElement {
   static properties = {
     variant: { type: String, reflect: true },
     clickable: { type: Boolean, reflect: true },
-    href: { type: String }
+    href: { type: String },
+    _hasImage: { type: Boolean, state: true }
   };
 
   constructor() {
@@ -15,6 +16,15 @@ class RetrexTile extends LitElement {
     this.variant = 'generic';
     this.clickable = false;
     this.href = '';
+    this._hasImage = false;
+  }
+
+  firstUpdated() {
+    const imageSlot = this.shadowRoot.querySelector('slot[name="image"]');
+    this._hasImage = imageSlot.assignedElements().length > 0;
+    imageSlot.addEventListener('slotchange', () => {
+      this._hasImage = imageSlot.assignedElements().length > 0;
+    });
   }
 
   _handleClick(event) {
@@ -25,10 +35,11 @@ class RetrexTile extends LitElement {
 
   render() {
     const classes = `retrex-tile retrex-tile--${this.variant} ${this.clickable ? 'retrex-tile--clickable' : ''}`;
+    const imageClasses = `retrex-tile__image ${!this._hasImage ? 'retrex-tile__image--default' : ''}`;
     
     return html`
       <div class="${classes}" @click="${this._handleClick}">
-        <div class="retrex-tile__image">
+        <div class="${imageClasses}">
           <slot name="image"></slot>
         </div>
         
