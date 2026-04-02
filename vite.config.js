@@ -11,7 +11,17 @@ export default defineConfig({
   root: './src',
   // Set the root directory to 'src'
   build: {
-    outDir: '../dist' // Output directory for the build
+    outDir: '../dist',
+    rollupOptions: {
+      input: {
+        main: path.resolve(dirname, 'src/index.html'),
+        projects: path.resolve(dirname, 'src/projects.html'),
+        services: path.resolve(dirname, 'src/services.html'),
+        contact: path.resolve(dirname, 'src/contact.html'),
+        privacy: path.resolve(dirname, 'src/privacy.html'),
+        terms: path.resolve(dirname, 'src/terms.html'),
+      }
+    }
   },
   server: {
     port: 3000,

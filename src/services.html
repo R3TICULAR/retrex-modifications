@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Services | RETREX Digital</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            slate: { 950: "#020617" },
+            teal: { 400: "#2dd4bf", 500: "#14b8a6", 900: "#134e4a" }
+          },
+          fontFamily: { "headline": ["Space Grotesk"], "body": ["Inter"], "label": ["Inter"] },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    body { background-color: #020617; }
+  </style>
+</head>
+<body class="font-body text-slate-300 antialiased">
+
+<!-- Navigation -->
+<nav class="bg-slate-950/80 backdrop-blur-md font-['Space_Grotesk'] font-bold tracking-tight docked full-width top-0 sticky border-b border-white/10 shadow-xl shadow-teal-900/10 z-50">
+  <div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+    <a href="./index.html" class="text-2xl font-black tracking-tighter text-teal-500 no-underline">RETREX</a>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-slate-400 font-medium hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300 active:scale-95 px-2 py-1" href="./index.html">Home</a>
+      <a class="text-teal-400 border-b-2 border-teal-500 pb-1 font-medium hover:bg-white/5 rounded-lg transition-all duration-300 active:scale-95" href="./services.html">Services</a>
+      <a class="text-slate-400 font-medium hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300 active:scale-95 px-2 py-1" href="./projects.html">Projects</a>
+      <a class="text-slate-400 font-medium hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300 active:scale-95 px-2 py-1" href="./contact.html">Contact</a>
+    </div>
+    <a href="./contact.html" class="bg-teal-500 text-slate-950 px-6 py-2 rounded-lg font-bold hover:bg-teal-400 transition-all duration-300 active:scale-95 no-underline">Get Started</a>
+  </div>
+</nav>
+
+<!-- Services Section -->
+<main class="pt-32 pb-20 px-6 bg-[#1a1a2e]">
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <div class="mb-16 text-center md:text-left">
+      <h1 class="font-headline text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">What We Build</h1>
+      <p class="text-xl text-slate-400 max-w-2xl font-light">End-to-end digital solutions tailored to your business</p>
+    </div>
+
+    <!-- Bento-style Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+      <!-- Card 1 -->
+      <div class="bg-[#252547] p-8 rounded-[8px] border border-slate-800 hover:border-teal-500/50 transition-all duration-300 group">
+        <div class="w-12 h-12 flex items-center justify-center bg-teal-500/10 rounded-lg mb-6 text-teal-500 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined">web</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3 font-headline">Custom Web Applications</h3>
+        <p class="text-slate-400 leading-relaxed">High-performance, scalable web apps built with the latest frameworks for seamless user experiences.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-[#252547] p-8 rounded-[8px] border border-slate-800 hover:border-teal-500/50 transition-all duration-300 group">
+        <div class="w-12 h-12 flex items-center justify-center bg-teal-500/10 rounded-lg mb-6 text-teal-500 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined">shopping_cart</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3 font-headline">E-Commerce Solutions</h3>
+        <p class="text-slate-400 leading-relaxed">Robust online storefronts optimized for conversion, security, and complex inventory management.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-[#252547] p-8 rounded-[8px] border border-slate-800 hover:border-teal-500/50 transition-all duration-300 group">
+        <div class="w-12 h-12 flex items-center justify-center bg-teal-500/10 rounded-lg mb-6 text-teal-500 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined">design_services</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3 font-headline">UI/UX Design Systems</h3>
+        <p class="text-slate-400 leading-relaxed">Consistent, accessible visual languages that empower brands and streamline development cycles.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="bg-[#252547] p-8 rounded-[8px] border border-slate-800 hover:border-teal-500/50 transition-all duration-300 group">
+        <div class="w-12 h-12 flex items-center justify-center bg-teal-500/10 rounded-lg mb-6 text-teal-500 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined">api</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3 font-headline">API Development</h3>
+        <p class="text-slate-400 leading-relaxed">Secure and documented RESTful or GraphQL endpoints designed for reliability and speed.</p>
+      </div>
+      <!-- Card 5 -->
+      <div class="bg-[#252547] p-8 rounded-[8px] border border-slate-800 hover:border-teal-500/50 transition-all duration-300 group">
+        <div class="w-12 h-12 flex items-center justify-center bg-teal-500/10 rounded-lg mb-6 text-teal-500 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined">speed</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3 font-headline">Performance Optimization</h3>
+        <p class="text-slate-400 leading-relaxed">Auditing and accelerating load times to ensure perfect Lighthouse scores and user retention.</p>
+      </div>
+      <!-- Card 6 -->
+      <div class="bg-[#252547] p-8 rounded-[8px] border border-slate-800 hover:border-teal-500/50 transition-all duration-300 group">
+        <div class="w-12 h-12 flex items-center justify-center bg-teal-500/10 rounded-lg mb-6 text-teal-500 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined">lightbulb</span>
+        </div>
+        <h3 class="text-xl font-bold text-white mb-3 font-headline">Technical Consulting</h3>
+        <p class="text-slate-400 leading-relaxed">Strategic roadmap planning and architecture advice for complex digital transformation projects.</p>
+      </div>
+    </div>
+
+    <!-- CTA Banner -->
+    <div class="relative overflow-hidden bg-slate-900 rounded-xl p-12 text-center border border-teal-900/50">
+      <div class="absolute inset-0 bg-gradient-to-r from-teal-500/5 to-transparent pointer-events-none"></div>
+      <h2 class="font-headline text-3xl md:text-4xl font-bold text-white mb-6 relative z-10">Ready to build something?</h2>
+      <a href="./contact.html" class="relative z-10 bg-teal-500 text-slate-950 font-bold px-10 py-4 rounded-lg hover:bg-teal-400 hover:shadow-[0_0_20px_rgba(20,184,166,0.4)] transition-all active:scale-95 duration-150 font-['Space_Grotesk'] inline-block no-underline">Let's Talk</a>
+    </div>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-950 border-t border-slate-800 w-full">
+  <div class="flex flex-col md:flex-row justify-between items-center p-12 max-w-7xl mx-auto gap-6 font-['Inter'] text-sm">
+    <a href="./index.html" class="text-lg font-bold text-teal-500 font-['Space_Grotesk'] no-underline">RETREX</a>
+    <div class="flex flex-wrap justify-center gap-8">
+      <a class="text-slate-500 hover:text-teal-400 underline underline-offset-4 transition-opacity hover:opacity-80" href="./privacy.html">Privacy</a>
+      <a class="text-slate-500 hover:text-teal-400 underline underline-offset-4 transition-opacity hover:opacity-80" href="./terms.html">Terms</a>
+      <a class="text-slate-500 hover:text-teal-400 underline underline-offset-4 transition-opacity hover:opacity-80" href="https://github.com/R3TICULAR">GitHub</a>
+      <a class="text-slate-500 hover:text-teal-400 underline underline-offset-4 transition-opacity hover:opacity-80" href="https://linkedin.com/in/cecil-hunter-1357c">LinkedIn</a>
+    </div>
+    <p class="text-slate-500 text-center md:text-right">&copy; 2024 Retrex Digital. Built for the future.</p>
+  </div>
+</footer>
+
+</body>
+</html>
