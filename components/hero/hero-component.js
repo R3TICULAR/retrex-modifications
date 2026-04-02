@@ -1,5 +1,6 @@
 import { LitElement, html, css, unsafeCSS } from 'lit';
 import styles from './hero-component.scss';
+import '../shader-lines/shader-lines.js';
 
 class HeroComponent extends LitElement {
   static styles = css`${unsafeCSS(styles)}`;
@@ -44,11 +45,7 @@ class HeroComponent extends LitElement {
   render() {
     return html`
       <div class="video-container">
-        <div class="parallax-layers">
-          <div class="layer layer-1"></div>
-          <div class="layer layer-2"></div>
-          <div class="layer layer-3"></div>
-        </div>
+        <shader-lines class="shader-bg"></shader-lines>
         <slot name="video"></slot>
         <div class="content">
           <div class="typewriter-container">

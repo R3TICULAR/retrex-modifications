@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Our Work | RETREX Digital</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            slate: { 950: "#0f172a" },
+            teal: { 400: "#2dd4bf", 500: "#14b8a6" },
+            yellow: { 400: "#facc15", 500: "#eab308" },
+            surface: { DEFAULT: "#1a1a2e", card: "#252547" }
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          fontFamily: { "headline": ["Space Grotesk"], "body": ["Inter"], "label": ["Inter"] }
+        },
+      },
+    }
+  </script>
+  <style>
+    body { background-color: #1a1a2e; color: #f8fafc; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  </style>
+</head>
+<body class="font-body antialiased">
+
+<!-- Navigation -->
+<nav class="bg-slate-950/80 backdrop-blur-md font-['Space_Grotesk'] font-bold tracking-tight docked full-width top-0 sticky border-b border-white/10 shadow-xl shadow-teal-900/10 z-50">
+  <div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+    <a href="./index.html" class="text-2xl font-black tracking-tighter text-teal-500 no-underline">RETREX</a>
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-slate-400 font-medium hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300 active:scale-95 px-2 py-1" href="./index.html">Home</a>
+      <a class="text-slate-400 font-medium hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300 active:scale-95 px-2 py-1" href="./services.html">Services</a>
+      <a class="text-teal-400 border-b-2 border-teal-500 pb-1 font-medium hover:bg-white/5 rounded-lg transition-all duration-300 active:scale-95" href="./projects.html">Projects</a>
+      <a class="text-slate-400 font-medium hover:text-white hover:bg-white/5 rounded-lg transition-all duration-300 active:scale-95 px-2 py-1" href="./contact.html">Contact</a>
+    </div>
+    <a href="./contact.html" class="bg-teal-500 text-slate-950 px-6 py-2 rounded-lg font-bold hover:bg-teal-400 transition-all duration-300 active:scale-95 no-underline">Get Started</a>
+  </div>
+</nav>
+
+<main class="min-h-screen">
+  <!-- Hero Section -->
+  <section class="pt-20 pb-16 px-8 max-w-7xl mx-auto">
+    <div class="relative">
+      <div class="absolute -top-10 -left-10 w-32 h-32 bg-teal-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-10 right-0 w-64 h-64 bg-yellow-500/5 rounded-full blur-3xl"></div>
+      <h1 class="text-5xl md:text-7xl font-headline font-bold text-white tracking-tighter mb-4">Our Work</h1>
+      <p class="text-slate-400 text-xl max-w-2xl font-light">Digital solutions we've built for clients and ourselves. From high-performance web apps to developer utilities.</p>
+    </div>
+  </section>
+
+  <!-- Projects Grid -->
+  <section class="pb-24 px-8 max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+      <!-- Project Card 1: Portfolio Website -->
+      <div class="bg-[#252547] rounded-lg border border-white/5 overflow-hidden group shadow-2xl shadow-black/20">
+        <div class="aspect-video relative overflow-hidden bg-slate-900">
+          <img alt="Portfolio Website" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkqHvlHb4XyK1JsxEI-Kp3JtlQepEzo8MSu-PCvXmNJnphDdr4OrLIxDah3_fhh5mn409hY5s_nQ--pOf8M23fdGxJyQU39fjQnczQoUKyc-ct9UluD5yG2KbVXp4a_3uMuWjxWI4FfRc_WP3ScWVGIhbcSSoVtuwKda3qQaZDA3m0mqzCWJhr_SgjCunylkK9fBf3TnspOsMcHcWhIY-NLn8TNVi9Zju3wDmcv1tsugcBSSPUIM-NROuPNhWJFM1ONDBzrha1gJlG"/>
+          <div class="absolute top-4 left-4">
+            <span class="bg-yellow-500 text-slate-950 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">In Development</span>
+          </div>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-headline font-bold text-white mb-3">Portfolio Website</h3>
+          <p class="text-slate-400 text-sm mb-6 leading-relaxed">Personal developer portfolio optimized for speed and accessibility. Built using modular web components for maximum reusability.</p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">Lit</span>
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">SCSS</span>
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">Vite</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <a class="flex items-center gap-2 text-teal-500 font-headline font-bold text-sm hover:text-teal-400 transition-colors" href="#">View Demo <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+            <a class="flex items-center gap-2 text-slate-400 font-headline font-bold text-sm hover:text-white transition-colors" href="https://github.com/R3TICULAR/retrex-modifications"><span class="material-symbols-outlined text-sm">code</span> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 2: Payment Kit Platform -->
+      <div class="bg-[#252547] rounded-lg border border-white/5 overflow-hidden group shadow-2xl shadow-black/20">
+        <div class="aspect-video relative overflow-hidden bg-slate-900">
+          <img alt="E-commerce Platform" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCaDpGFtYvbngHbqtG-gVUK54BJuJjpp4ZrpEDuPOxI9f7LyfGwDW0NJP7Vvb5caEaGg0TNmrMEIfAaI-3rdqEGq88IVWF730oaRNJTdkE5dj_8XXTiMrilvoG7jfBGhv1g2SIGpCIG27l5hZVzmD8zhH8SMmsryMe30qwXA_P_phwHvLA7fhLq4NbTWgrTDyn13EQbuSIO0wLm0gGy5G7vreVfHArk_207P055inAv_Rxc0uo3i5Ai9Dg4BmD519NyB2oElX0Jgrw1"/>
+          <div class="absolute top-4 left-4">
+            <span class="bg-yellow-500 text-slate-950 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">In Development</span>
+          </div>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-headline font-bold text-white mb-3">Simple Payment Kit</h3>
+          <p class="text-slate-400 text-sm mb-6 leading-relaxed">A lightweight, developer-friendly payment integration toolkit. Drop-in Stripe checkout flows, subscription management, and webhook handling, all ready to ship in minutes.</p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">React</span>
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">Node.js</span>
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">Stripe</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <a class="flex items-center gap-2 text-teal-500 font-headline font-bold text-sm hover:text-teal-400 transition-colors" href="#">View Demo <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+            <a class="flex items-center gap-2 text-slate-400 font-headline font-bold text-sm hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-sm">code</span> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3: AnnounceKit -->
+      <div class="bg-[#252547] rounded-lg border border-white/5 overflow-hidden group shadow-2xl shadow-black/20">
+        <div class="aspect-video relative overflow-hidden bg-slate-900">
+          <img alt="AnnounceKit" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUXEO8deah9i9gd1E9tniQUpabUmKlSX_LJyJBW-Xl5jZzt0eq1A5QdgfHKsa6cpu9AEeJak-io9gYBGRo4MMY1z5Zf9Wi-hnJrYlgnJGQjvCkTskspalmeatvv4jOSR_FHHofhSeQ8FyOsQdTzLLGUSIkuUo-X7oZ3qldhvT8t2GgZV_2Xan2pfJYPEHB6nHOAoP_Sn-Ej6swqSttCEpNsWrt2N6PDe3Tb_53Z1QJthyxHccpRIsrBrLF2hHX2LPoBpPOm99N0a2B"/>
+          <div class="absolute top-4 left-4">
+            <span class="bg-yellow-500 text-slate-950 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">In Development</span>
+          </div>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-headline font-bold text-white mb-3">AnnounceKit</h3>
+          <p class="text-slate-400 text-sm mb-6 leading-relaxed">Static analysis tool for HTML and JSX that identifies missing accessibility labels and provides real-time aria-live suggestions.</p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">TypeScript</span>
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">AST</span>
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">React</span>
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">CLI</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <a class="flex items-center gap-2 text-teal-500 font-headline font-bold text-sm hover:text-teal-400 transition-colors" href="#">View Demo <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+            <a class="flex items-center gap-2 text-slate-400 font-headline font-bold text-sm hover:text-white transition-colors" href="https://github.com/R3TICULAR/AnnounceKit"><span class="material-symbols-outlined text-sm">code</span> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 4: Data Visualization Dashboard -->
+      <div class="bg-[#252547] rounded-lg border border-white/5 overflow-hidden group shadow-2xl shadow-black/20">
+        <div class="aspect-video relative overflow-hidden bg-slate-900">
+          <img alt="Data Viz Dashboard" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkR1-09axD7YwkeTNGU277rHijKl91IibBexjSGH5yBz9Az4HJHV10S4tPHRuufG1axXErG2Ik4VKO0HtvODHc-RM2w_wLRHX4NmJQqB-k6Yvx0blmJl3BZoFes-FvxvGlRC9E9GJMyNh2l6d_jxFDDq7jsr6hokA0luj6nZxxAsCa9BVzCOiO7HN89XYm_7L271CEiWCvyKfLn-RzksHtobBPAUXyD2abWB_KE26KF9ZGpmeyU0FG4aQRiCJWbNfIgf72lQNHunnA"/>
+          <div class="absolute top-4 left-4">
+            <span class="bg-slate-700 text-slate-300 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Archived</span>
+          </div>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-headline font-bold text-white mb-3">Data Visualization Dashboard</h3>
+          <p class="text-slate-400 text-sm mb-6 leading-relaxed">Interactive analytics dashboard processing real-time streaming data. Features dynamic D3 charts and Firebase back-end integration.</p>
+          <div class="flex flex-wrap gap-2 mb-8">
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">D3.js</span>
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">Firebase</span>
+            <span class="text-[11px] font-medium text-teal-400 bg-teal-500/10 px-2 py-1 rounded border border-teal-500/20">Tailwind</span>
+          </div>
+          <div class="flex items-center gap-4">
+            <a class="flex items-center gap-2 text-teal-500 font-headline font-bold text-sm hover:text-teal-400 transition-colors" href="#">View Demo <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+            <a class="flex items-center gap-2 text-slate-400 font-headline font-bold text-sm hover:text-white transition-colors" href="#"><span class="material-symbols-outlined text-sm">code</span> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-24 bg-slate-900/50">
+    <div class="max-w-4xl mx-auto px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-headline font-bold text-white mb-6">Have a vision for a project?</h2>
+      <p class="text-slate-400 mb-10 text-lg">We're always looking for ambitious partners to build the next generation of digital tools.</p>
+      <a href="./contact.html" class="bg-yellow-500 hover:bg-yellow-400 text-slate-950 px-8 py-4 rounded-lg font-headline font-bold text-lg active:scale-95 transition-all inline-block no-underline">Start a Collaboration</a>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-950 full-width py-12 px-8 border-t border-white/5">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+    <div>
+      <div class="text-lg font-bold text-teal-500 font-['Space_Grotesk'] mb-4">RETREX</div>
+      <p class="font-['Inter'] text-sm text-slate-500 max-w-xs leading-relaxed">&copy; 2024 Retrex Digital. Built for the future. Pushing the boundaries of digital engineering and design aesthetics.</p>
+    </div>
+    <div class="flex flex-col md:items-end justify-between">
+      <div class="flex gap-6 mb-8 md:mb-0">
+        <a class="text-slate-500 hover:text-teal-300 hover:underline decoration-teal-500 underline-offset-4 transition-opacity hover:opacity-80 font-['Inter'] text-sm" href="./privacy.html">Privacy</a>
+        <a class="text-slate-500 hover:text-teal-300 hover:underline decoration-teal-500 underline-offset-4 transition-opacity hover:opacity-80 font-['Inter'] text-sm" href="./terms.html">Terms</a>
+        <a class="text-slate-500 hover:text-teal-300 hover:underline decoration-teal-500 underline-offset-4 transition-opacity hover:opacity-80 font-['Inter'] text-sm" href="https://github.com/R3TICULAR">GitHub</a>
+        <a class="text-slate-500 hover:text-teal-300 hover:underline decoration-teal-500 underline-offset-4 transition-opacity hover:opacity-80 font-['Inter'] text-sm" href="https://linkedin.com/in/cecil-hunter-1357c">LinkedIn</a>
+      </div>
+      <div class="text-slate-600 text-xs mt-4">Hand-crafted in the digital void.</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -20,16 +20,18 @@
   height: 500px;
 
   &:hover {
-    transform: translateY(-2px);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   }
 
   .retrex-tile__image {
     height: 200px;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-accent)),
-                url('https://picsum.photos/400/200') center/cover;
-    background-blend-mode: overlay;
     position: relative;
+
+    &--default {
+      background: linear-gradient(135deg, var(--color-primary), var(--color-accent)),
+                  url('https://picsum.photos/400/200') center/cover;
+      background-blend-mode: overlay;
+    }
 
     ::slotted(*) {
       width: 100%;

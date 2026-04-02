@@ -1,3 +1,9 @@
+:host {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
 header {
   display: flex;
@@ -7,6 +13,7 @@ header {
   background-color: var(--color-primary);
   color: var(--color-bg);
   max-block-size: 80px;
+  transition: background-color 0.3s ease;
 
   .menu-toggle {
     display: none;
@@ -66,25 +73,59 @@ header {
     flex-wrap: wrap;
     max-block-size: none;
 
+    &.menu-active {
+      background-color: var(--color-bg);
+
+      .menu-toggle .hamburger {
+        background-color: var(--color-primary);
+      }
+    }
+
     .menu-toggle {
       display: flex;
+
+      .hamburger {
+        transition: background-color 0.3s ease;
+      }
     }
 
     .nav-wrapper {
       display: none;
       width: 100%;
       margin-left: 0;
-      margin-top: 20px;
+      margin-top: 0;
+      background-color: var(--color-bg);
+      padding: 1rem;
+      border-radius: 0 0 8px 8px;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
 
       &.open {
         display: block;
+        max-height: 500px;
+        opacity: 1;
+        animation: slideDown 0.3s ease-out;
       }
 
       nav {
         flex-direction: column;
         gap: 10px;
+        align-items: flex-end;
       }
     }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
